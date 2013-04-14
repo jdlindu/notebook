@@ -1,0 +1,11 @@
+1.ssh -qTfnN -D 7070 linrunjin@63.223.73.212
+2.配置switch proxy 
+	SOCKS Host 127.0.0.1 7070
+3.online rule list
+	http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
+4.ssh选项
+-q :- be very quite, we are acting only as a tunnel.
+-T :- Do not allocate a pseudo tty, we are only acting a tunnel.
+-f :- move the ssh process to background, as we don’t want to interact with this ssh session directly.
+-N :- Do not execute remote command.
+-n :- redirect standard input to /dev/null.
