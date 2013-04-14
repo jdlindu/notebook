@@ -1,0 +1,18 @@
+1. 安装nginx
+	sudo apt-get install nginx
+	sudo /etc/init.d/nginx start
+2.安装php-fpm
+	sudo apt-get install php5-fpm
+3.修改配置文件
+
+	/etc/php5/fpm/php.ini cgi.fix_pathinfo=0
+	/etc/nginx/sites-available/default 去掉php解析的注释
+	
+		location ~ \.php$ {
+                	#fastcgi_pass 127.0.0.1:9000;
+                	# With php5-fpm:
+                	fastcgi_pass unix:/var/run/php5-fpm.sock;
+                	fastcgi_index index.php;
+                	include fastcgi_params;
+        	}
+4.重启nginx & php5-fpm
