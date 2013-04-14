@@ -1,0 +1,4 @@
+1.安装中文语言包System Settings-->Language Support-->Install/Remove Languages
+2.安装IBus框架
+	sudo apt-get install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4
+3.在IBus Preference设置中添加中文输入法
