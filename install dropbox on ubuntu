@@ -1,0 +1,9 @@
+32bit
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
+
+64bit
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+~/.dropbox-dist/dropboxd
+
+控制脚本 wget https://www.dropbox.com/download?dl=packages/dropbox.py
