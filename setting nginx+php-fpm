@@ -16,3 +16,5 @@
                 	include fastcgi_params;
         	}
 4.重启nginx & php5-fpm
+5.安装mysql
+sudo apt-get install mysql-server
