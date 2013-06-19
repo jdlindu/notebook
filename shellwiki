@@ -1,3 +1,14 @@
+
+
 	#how to list just dirtory
 	$ ls -d */ 
+
+	#config file for your bash script
+
+	set variable in config.ini ,then source config.ini in your script
+	ie:
+		config.ini	: 	PATTERN="$hello"
+		script		:	echo ${PATTERN}
+
+
 
