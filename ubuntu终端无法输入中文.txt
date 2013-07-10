@@ -1,0 +1,5 @@
+
+将/etc/default/locale 的LANG修改为en_US.utf8
+sudo vi /etc/default/locale
+linrunjin@dsnode:~$ cat /etc/default/locale 
+LANG=en_US.utf8
