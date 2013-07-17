@@ -1,0 +1,15 @@
+
+1. Download and install Oracle’s public key.
+
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+
+2. Create a repo file for Virtualbox
+
+echo "deb http://download.virtualbox.org/virtualbox/debian precise contrib" >> ~/virtualbox.list
+sudo mv ~/virtualbox.list /etc/apt/sources.list.d/
+
+3. sudo apt-get update
+
+4. sudo apt-get install build-essential linux-headers-`uname -r` dkms
+
+5. sudo apt-get install virtualbox-4.2
