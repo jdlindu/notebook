@@ -1,0 +1,4 @@
+
+1. wget http://files.vagrantup.com/packages/0219bb87725aac28a97c0e924c310cc97831fd9d/vagrant_1.2.4_x86_64.deb
+
+2. dpkg -i vagrant_1.2.4_x86_64.deb
